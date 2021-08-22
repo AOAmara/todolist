@@ -49,19 +49,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 4px;
     }
     .itemText {
-         width: 100%;
-        margin-left: 20px;
+        width: 100%;
+        margin: 0 20px;
     }
     .completed {
         text-decoration: line-through;
         color: #999999;
     }
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
     .trashcan {
-        background: #e6e6e6;
+        background: #e93f33;
         border: none;
-        color: #ff0000;
+        color: #ffffff;
         outline: none;
+        margin: -10px;
+        padding: 15px 16px 16px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
     }
 </style>

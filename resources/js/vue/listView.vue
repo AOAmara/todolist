@@ -1,11 +1,16 @@
 <template>
     <div>
-        <div v-for="(item, index) in items" :key="index">
-            <list-item
-                :item="item"
-                class="item"
-                v-on:itemChanged="$emit('reloadlist')"
-            />
+        <div v-if="items.length">
+            <div v-for="(item, index) in items" :key="index">
+                <list-item
+                    :item="item"
+                    class="item"
+                    v-on:itemChanged="$emit('reloadlist')"
+                />
+            </div>
+        </div>
+        <div v-if="items.length === 0" class="text-center">
+            <p>No tasks todo</p>
         </div>
     </div>
 </template>
@@ -22,8 +27,11 @@
 
 <style scoped>
     .item {
-        background: #e6e6e6;
-        padding: 5px;
-        margin-top: 5px;
+        background: #f3f1f4;
+        padding: 10px;
+        margin-top: 8px;
+    }
+    .text-center {
+        text-align: center;
     }
 </style>

@@ -1,4 +1,4 @@
-##Installation
+## Installation
 
 Cloner le projet
 
@@ -10,7 +10,7 @@ Cloner le projet
 
 - Créez un fichier .env à partir de .env-example sous le dossier racine du projet.
 - Remplir les configurations manquantes dans le fichier .env. Suivez les instructions de la
-section configuration.
+section [configuration](https://github.com/AOAmara/todolist#configuration).
 - php artisan key:generate
 
 ## Configuration

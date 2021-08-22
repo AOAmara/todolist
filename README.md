@@ -30,8 +30,11 @@ section [configuration](https://github.com/AOAmara/todolist#configuration).
 
 - composer install
 - npm install
-- npm run dev
 
 ## Créer les tables de la base de données
 
 - php artisan migrate
+
+## Exécuter les applications
+- php artisan serve
+- npm run dev
